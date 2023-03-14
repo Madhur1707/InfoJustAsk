@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Just Ask</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/logo png.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+
+        <div id="logo">
+            <a href="index.html"><img src="img/logo png.png" alt=""></a>
+        </div>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link ">About</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">Services</a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="exsupport.html" class="dropdown-item" style="text-align: center;">Examination
+                            Support</a>
+                        <a href="counsellingsup.html" class="dropdown-item" style="text-align: center;">Counselling
+                            Support</a>
+                        <a href="applicationsip.html" class="dropdown-item" style="text-align: center;">Application
+                            Support</a>
+                        <a href="resultsup.html" class="dropdown-item" style="text-align: center;">Result Analysis</a>
+                        <a href="collagemapping.html" class="dropdown-item" style="text-align: center;">College
+                            Mapping</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">Consultancy</a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="mba.html" class="dropdown-item">MBA</a>
+                        <a href="medical.html" class="dropdown-item">MEDICAL</a>
+                        <a href="engineering.html" class="dropdown-item">ENGINEERING</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <a href="appointment.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">JUST ASK<i
+                    class="fa fa-arrow-right ms-2"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary py-5 mb-5 page-header">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 text-center">
+
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+
+    <!-- Pop up Start -->
+    <div class="container">
+
+        <div class="modal" id="popupModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 style="margin-bottom: 0px;">Have any Query?</h4>
+                        <button class="modal__close-btn" onclick="closeModal()"
+                            style="background: none;border: none; margin-top: -12px; font-size: 25px;">x</button>
+                    </div>
+                    <div class="modal-body">
+                        <h1 style="font-size: 20px;">Please feel free to write us.</h1>
+                        <form action="https://formsubmit.co/drnirajsingh@infojustask.com" method="POST">
+                            <div class="form-group">
+
+                                <input type="text" name="name" class="form-control" id="name"
+                                    placeholder="Enter your name*">
+                            </div><br>
+                            <div class="form-group">
+
+                                <input type="email" name="email" class="form-control" id="email"
+                                    placeholder="Enter your email address*">
+                            </div><br>
+                            <div class="form-group">
+
+                                <input type="mobileNo" name="mobile no" class="form-control" id="mobileno"
+                                    placeholder="Mobile No*">
+                            </div><br>
+
+                            <div class="form-group">
+                                <div class="form-floating">
+
+                                    <select class="col-12"
+                                        style="padding: 6px 12px; background-color: #ffffff; border: 1px solid #ced4da; font-weight: 400; color: #52565b;"
+                                        name="course" id="course">
+                                        <option>Course</option>
+                                        <option value="MBBS">MBBS</option>
+                                        <option value="NEET">NEET</option>
+                                        <option value="MD">MD</option>
+                                        <option value="MS">MS</option>
+                                        <option value="MDS">MDS</option>
+
+                                    </select>
+
+                                </div>
+                            </div><br>
+                            <div class="form-group">
+
+                                <!-- <input type="email" class="form-control" id="email" placeholder="Mobile No*"> -->
+                                <div class="form-floating">
+                                    <select class="col-12"
+                                        style="padding: 6px 12px; background-color: #ffffff; border: 1px solid #ced4da; font-weight: 400; color: #52565b;"
+                                        name="Study In" id="studyin">
+                                        <option>Study In</option>
+                                        <option value="India">India</option>
+                                        <option value="Abroad">Abroad</option>
+                                    </select>
+                                </div>
+                            </div><br>
+                            <div class="form-group">
+
+                                <input type="Query" name="query" class="form-control" id="Query"
+                                    placeholder="Your Query*" style="padding: 20px;">
+                            </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <button type="Submit" class="btn-primary btn"
+                            style="background: rgb(20 20 90); color: white; margin-left: 17px;margin-top: 20px;margin-bottom: 20px; ">Submit</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pop up End -->
+
+
+    <script>
+        function closeModal() {
+            $('#popupModal').modal('hide');
+            // document.getElementById('MYModal').style.display = 'none';
+        }
+    </script>
+
+    <script>
+        window.onload = setTimeout(function () {
+            $('#popupModal').modal('show');
+        }, 4000);
+    </script>
+
+
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute " src="img/neet ug.jpg" alt=""
+                            style="object-fit: contain; width: 800px; height: 400px;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <!-- <h1 class="section-title bg-white text-start justAsk-primary pe-3"
+                    style=" font-size: 1.7em; text-decoration: underline;">MEDICAL</h1> -->
+                    <h6 style="font-size: 1.4em;font-weight: bold; text-decoration: underline; margin-bottom: 1.2rem; ">
+                        NEET UG</h6>
+                    <p class="mb-4" style="text-align: justify;">The National Eligibility cum Entrance Test
+                        (Undergraduate) or NEET (UG), formerly the All India Pre-Medical Test (AIPMT), is an all India
+                        pre-medical entrance test for students who wish to pursue undergraduate medical (MBBS), dental
+                        (BDS) and AYUSH (BAMS, BUMS, BHMS, etc.) courses in government and private institutions in India
+                        and also, for those intending to pursue primary medical qualification abroad. <br>
+                        The exam is conducted by National Testing Agency (NTA), which provides the results to the
+                        Directorate General of Health Services under Ministry of Health and Family Welfare and State
+                        Counselling Authorities for seat allocation.</p>
+                    <p class="mb-4" style="text-align: justify;">NEET-UG is a single entrance test for admissions to
+                        MBBS and BDS colleges across India. <br> NEET UG is one of the largest exam in India in terms of
+                        registered applicants.
+                        <br>
+                        After the enactment of NMC Act 2019 in September 2019, NEET-UG became the sole entrance test for
+                        admissions to medical colleges in India including the All India Institutes of Medical Sciences
+                        (AIIMS) and Jawaharlal Institute of Postgraduate Medical Education & Research (JIPMER) which
+                        until then conducted separate exams.
+                    </p>
+
+
+
+                </div>
+            </div>
+
+            <h1 class="section-title bg-white text-start justAsk-primary pe-3"
+                style="font-size: 1.7em;margin-left: 143px;display: flex;margin-bottom: 56px;margin-top: 50px; border: 3px solid black; align-items: center;">
+                COURSES AFTER NEET UG</h1>
+
+
+
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute " src="img/mbbs.jpg" alt=""
+                            style="object-fit: contain; width: 800px; height: 400px;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <!-- <h1 class="section-title bg-white text-start justAsk-primary pe-3"
+                    style=" font-size: 1.7em; text-decoration: underline;">MEDICAL</h1> -->
+                    <h6 style="font-size: 1.4em;font-weight: bold; text-decoration: underline; margin-bottom: 1.2rem; ">
+                        MBBS</h6>
+                    <p class="mb-4" style="text-align: justify;">MBBS, also known as Bachelor of Medicine and Bachelor
+                        of Surgery, is considered as the toughest examination and dominating professional course in
+                        India.</p>
+                    <p class="mb-4" style="text-align: justify;">Just Ask provide direct admission in MBBS through
+                        Management and NRI quota. We provide admission to private medical colleges through NEET UG.
+                    </p>
+                    <div class="row gy-2 gx-4 mb-4" style="text-align: justify;">
+                        <h6
+                            style="font-size: 1.4em;font-weight: bold; text-decoration: underline; margin-bottom: 1.2rem; ">
+                            Eligibility Criteria</h6>
+                        <div class="col-sm-6">
+
+                            <p class="mb-0" style="text-align: justify;"><i
+                                    class="fa fa-arrow-right text-primary me-2"></i>Biology Physics and Chemistry as
+                                main subjects in class 12.</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0" style="text-align: justify;"><i
+                                    class="fa fa-arrow-right text-primary me-2"></i>Aspirant should be 17 years and not
+                                more than 25 years.</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0" style="text-align: justify;"><i
+                                    class="fa fa-arrow-right text-primary me-2"></i>Candidate must have qualified NEET
+                                UG with good marks.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute " src="img/bds.jpg" alt=""
+                            style="object-fit: contain; width: 800px; height: 400px;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <!-- <h1 class="section-title bg-white text-start justAsk-primary pe-3"
+                    style=" font-size: 1.7em; text-decoration: underline;">MEDICAL</h1> -->
+                    <h6 style="font-size: 1.4em;font-weight: bold; text-decoration: underline; margin-bottom: 1.2rem; ">
+                        BDS</h6>
+                    <p class="mb-4" style="text-align: justify;">BDS (Bachelor of Dental Surgery) is a 5-years
+                        undergraduate program and the only approved professional dental course in India. It is a
+                        compulsory course for the students aspiring to work as dentists at government or private
+                        hospitals. BDS mainly focuses on training and introducing the students to the dental sciences
+                        and surgeries. The 5-year program involves 4 years of classroom education and 1 year of
+                        compulsory rotating internship. </p>
+                    <p class="mb-4" style="text-align: justify;">The degree is regulated by the Dental Council of India
+                        (DCI). The various BDS subjects taught in the program include Dental Histology, Oral Pathology,
+                        Oral Surgery, etc. It is necessary for the students to register themselves in the Dental Council
+                        of India which regulates the BDS course so that they become eligible to practice their
+                        profession after the completion of their degree.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute " src="img/bamsm.png" alt=""
+                            style="object-fit: contain; width: 800px; height: 400px;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <!-- <h1 class="section-title bg-white text-start justAsk-primary pe-3"
+                    style=" font-size: 1.7em; text-decoration: underline;">MEDICAL</h1> -->
+                    <h6 style="font-size: 1.4em;font-weight: bold; text-decoration: underline; margin-bottom: 1.2rem; ">
+                        BAMS</h6>
+                    <p class="mb-4" style="text-align: justify;">Bachelor of Ayurvedic Medicine and Surgery (BAMS) is a
+                        Bachelor’s Degree Course offered in India. It is a full-time 4+ years + 1-year internship course
+                        on Ayurveda, the holistic and ancient branch of medicine that focuses on preventive and curative
+                        health care. Ayurveda involves nutrition and lifestyle, herbal therapy, surgery and yoga. A BAMS
+                        degree course will teach you how to diagnose and cure people of various diseases. It will equip
+                        you with the knowledge of herbs, nutrition and diet, and of surgery and yoga. You will learn the
+                        study of body, mind and soul and how to use it for the benefit of humankind. A BAMS supplement
+                        modern medical education. </p>
+                    <p class="mb-4" style="text-align: justify; font-size: 24px;font-weight: bold;"> The objectives of
+                        the BAMS are:-
+                    </p>
+                    <div>
+
+                        <p class="mb-0" style="text-align: justify;"><i
+                                class="fa fa-arrow-right text-primary me-2"></i>The goal of the Bachelor of Ayurvedic
+                            Medicine and Surgery (BAMS) course is to provide the candidate with complete and
+                            comprehensive instruction in many elements of Ayurveda.</p>
+                    </div> <br>
+                    <div>
+                        <p class="mb-0" style="text-align: justify;"><i
+                                class="fa fa-arrow-right text-primary me-2"></i>To introduce the student to the basic
+                            Ayurvedic principles and techniques of understanding the body, its functions, maintenance
+                            and wellbeing.</p>
+                    </div><br>
+                    <p class="mb-0" style="text-align: justify;"><i
+                            class="fa fa-arrow-right text-primary me-2"></i>Based on the clinical evaluation and
+                        suitably identified and executed investigations, be able to diagnose and control acute and
+                        chronic disorders.</p>
+                </div><br>
+
+            </div><br>
+
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute " src="img/BSc-Nursing.jpg" alt=""
+                            style="object-fit: contain; width: 800px; height: 400px;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <!-- <h1 class="section-title bg-white text-start justAsk-primary pe-3"
+                    style=" font-size: 1.7em; text-decoration: underline;">MEDICAL</h1> -->
+                    <h6 style="font-size: 1.4em;font-weight: bold; text-decoration: underline; margin-bottom: 1.2rem; ">
+                        BSC NURSING</h6>
+                    <p class="mb-4" style="text-align: justify;">B.Sc Nursing or Bachelor of Science in Nursing is a
+                        4-year undergraduate program that prepares students to serve humanity with the help of medical
+                        treatment. Students can pursue this course after completing their 10+2 with Physics, Chemistry,
+                        and Biology (as compulsory subjects). BSc Nursing course can also be studied by General Nursing
+                        and Midwifery (G.N.M) degree holders. </p>
+                    <p class="mb-4" style="text-align: justify;">A B.Sc Nursing course focuses on imparting knowledge to
+                        students on critical care, and advanced analytical skills, and helps them inculcate values that
+                        are necessary for becoming professional nurses as per the National Health Policy 2002. This
+                        program is designed to help students address the healthcare sector’s needs of the nation,
+                        society, and individuals.
+                    </p>
+                    <p class="mb-4" style="text-align: justify;">Admission to a BSc Nursing Course is provided through
+                        the National Eligibility cum Entrance Test (NEET). However, some states also conduct their own
+                        nursing entrance exam or have their own admission process by filling out online application
+                        forms. There is a chance of creating a bright future and promising career by studying BSc
+                        Nursing such as becoming a clinical nurse specialist, certified nurse midwife, case manager,
+                        nurse anaesthetist, nurse educator, nurse practitioner, or staff nurse.
+                    </p>
+
+                </div>
+            </div><br>
+
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute " src="img/neetpg.jpg" alt=""
+                            style="object-fit: contain; width: 800px; height: 400px;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <!-- <h1 class="section-title bg-white text-start justAsk-primary pe-3"
+                    style=" font-size: 1.7em; text-decoration: underline;">MEDICAL</h1> -->
+                    <h6 style="font-size: 1.4em;font-weight: bold; text-decoration: underline; margin-bottom: 1.2rem; ">
+                        NEET PG</h6>
+                    <p class="mb-4" style="text-align: justify;">NEET PG is a computer-based entrance test for admissions to MD/MS and PG diploma courses which are offered in various government, private, Deemed/Central, ESIC and AFMS medical institutions all over India. The students can get admissions in medical colleges through NEET. This exam is conducted nationwide once a year in online mode by the National Board of Education (NBE) for admissions to various medical colleges across the nation. </p>
+                    <p class="mb-4" style="text-align: justify;">. All the medical graduates who want to go for PG courses from the best medical institutions should be aware of this exam. All the MBBS graduates are required to get themselves registered on the official website of NBE so that they can appear for the national level entrance exam. 
+                    </p>
+                    <p class="mb-4" style="text-align: justify; font-size: 24px;font-weight: bold;">The eligibility criteria for the exam are mentioned below:
+                    </p>
+                    <div>
+
+                        <p class="mb-0" style="text-align: justify;"><i
+                                class="fa fa-arrow-right text-primary me-2"></i>Candidates must have completed MBBS from a university/institution affiliated by the MCI.</p>
+                    </div><br>
+                    <div>
+
+                        <p class="mb-0" style="text-align: justify;"><i
+                                class="fa fa-arrow-right text-primary me-2"></i>Must have completed the mandatory internship before a required time frame.</p>
+                    </div><br>
+                    <div>
+
+                        <p class="mb-0" style="text-align: justify;"><i
+                                class="fa fa-arrow-right text-primary me-2"></i>Must have been provisionally/permanently certified by the Medical Council of India or State Council of India.</p>
+                    </div>
+                </div>
+            </div><br>
+
+
+        </div>
+
+
+    </div>
+    </div>
+    </div>
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class=" col-md-6">
+                    <h4 class="text-white mb-3">Quick Link</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="contact.html">FAQs & Help</a>
+                </div>
+                <div class="footer col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <p style="margin-bottom: 1px;"><i class="fa fa-map-marker-alt" style="margin-right: 27px;"></i>Flat
+                        No 53, 3rd Floor Prateek Apartment,
+                    <p style="margin-left: 41px;"> A2 Block, Paschim Vihar New Delhi - 110063 </p>
+
+                    </p>
+
+                    <p class="mb-2"><i class="fa fa-phone-alt" style="margin-right: 22px;"></i>+91 9873730594</p>
+                    <p class="mb-2"><i class="fa fa-envelope" style="margin-right: 22px;"></i>
+                        justaskedu@gmail.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social"
+                            href="https://twitter.com/justaskeducati?t=lcL4UnDYHm7bvcDn--5COw&s=09"><i
+                                class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social"
+                            href="https://www.facebook.com/profile.php?id=100088699698358&mibextid=ZbWKwL"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social"
+                            href="https://www.instagram.com/p/CmhNYv0P7_LibW-5pTJ3L3gdQMs0Ar8WjmQ-u40/?igshid=MDJmNzVkMjY="><i
+                                class="fab fa-instagram"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="copyright">
+                        <div class="row">
+                            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                                &copy; <a class="border-bottom" href="#">2023 Just Ask, All Rights Reserved</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <style>
+        .whatsapp_float {
+            position: fixed;
+            bottom: 120px;
+            right: 45px;
+        }
+    </style>
+    <div class="whatsapp_float">
+        <a href="https://wa.me/+919873730594" target="_blank"><img src="img/whatsapplogo.png" width="50px"
+                class="whatsapp_float_button" /></a>
+
+    </div>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
